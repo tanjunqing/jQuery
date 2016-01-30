@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script/jquery-2.2.0.js" charset="utf-8" type="text/javascript"></script>
+    <script src="script/demo.js" charset="UTF-8" type="text/javascript"></script>
+</head>
+<body>
+<div id="dd">
+    <input type="button" value="123" id="btn"/>
+</div>
+<!--<table id="table">-->
+<!--<thead>-->
+
+<!--</thead>-->
+<!--</table>-->
+</body>
+
+<script type="text/javascript">
+    $(function(){
+//        $("#btn").on("click",function(){
+//            jQuery.foo($(this));
+//            jQuery.bar();
+//        }),
+//        $("#btn").bar();
+//        $.myPlugin.foo($("#btn"));
+//        $.myPlugin.bar($("#btn"));
+//        $("#btn").pluginName();
+//        $("#btn").pluginName();
+//        $("#btn").hilight();
+//        $("#btn").dalert({"foreground": "blue"});
+        $("#dd").on("click","#btn",function(){
+            var val = $(this).val();
+            alert(val);
+        })
+    });
+</script>
+</html>
